@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    display: grid;
+    grid-template: max-content 1fr / 1fr 4fr;
+    font-family: Roboto;
+    font-size: 16px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.sidebar {
+    grid-row: span 2;
+    padding: 0 20px;
+    background-color: #50858B;
+    color: #fff;
+    position: relative;
+    z-index: 2;
+}
+
+.title svg {
+    height: 2rem;
+    width: 2rem;
+}
+
+.title {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.sidebar ul {
+    list-style: none;
+    margin: 30px 0;
+    padding-left: 10px;
+}
+
+.sidebar li {
+    margin: 10px 0;
+    font-weight: 600;
+}
+
+.list-item {
+    display: flex;
+    gap: 20px;
+}
+
+svg {
+    height: 1rem;
+    width: 1rem;
+    flex-shrink: 0;
+}
+
+.sidebar .list-item p {
+    margin: 0;
+}
+
+.header {
+    padding: 20px;
+    box-shadow: 2px 2px;
+    box-shadow: 0px 0px 5px black;
+}
+
+.upper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex: 1;
+}
+
+.search .bar {
+    background-color: #ddd;
+    height: 1.5rem;
+    border-radius: 50px;
+    min-width: 300px;
+    flex: 1;
+    max-width: min(500px, calc(100%-50px));
+}
+
+.personal-small {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+[class^="avatar"] {
+
+    background-color: #A1D2CE;
+    border-radius: 50%;
+}
+
+.avatar-small {
+    width: 40px;
+    height: 40px;
+}
+
+.avatar-big {
+    width: 65px;
+    height: 65px;
+}
+
+.name-small {
+    font-weight: 700;
+}
+
+.lower {
+    margin-top: 20px;
+    display: flex;
+    align-items: space-between;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+.personal-big {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.greeting p, .greeting h3 {
+    margin: 0;
+}
+
+button {
+    border-radius: 50px;
+    color: #fff;
+    background-color: #50858B;
+    padding: 8px 25px;
+    border: none;
+    font-weight: 600;
+    margin: 0 10px;
+}
